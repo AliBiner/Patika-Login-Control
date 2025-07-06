@@ -14,7 +14,7 @@ public class Main {
 
         if (inputPassword.equals(password))
             System.out.println("Giriş yapıldı.");
-        else if (!inputPassword.equals(password)) {
+        else{
             System.out.print("Şifrenizi sıfırlamak istiyorsanız 1'e basınız: ");
             int select = scanner.nextInt();
             switch (select){
