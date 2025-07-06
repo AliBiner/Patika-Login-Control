@@ -34,7 +34,7 @@ public class Main {
             System.out.println("Şifre oluşturulamadı, lütfen başka şifre giriniz.");
             newPassword = scanner.next();
         }
-
+        password = newPassword;
         System.out.println("Şifre oluşturuldu");
     }
 }
