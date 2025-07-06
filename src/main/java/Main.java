@@ -10,11 +10,11 @@ public class Main {
 
     public void start(){
         System.out.print("Şifrenizi giriniz: ");
-        String currentPassword = scanner.next();
+        String inputPassword = scanner.next();
 
-        if (currentPassword.equals(password))
+        if (inputPassword.equals(password))
             System.out.println("Giriş yapıldı.");
-        else if (!currentPassword.equals(password)) {
+        else if (!inputPassword.equals(password)) {
             System.out.print("Şifrenizi sıfırlamak istiyorsanız 1'e basınız: ");
             int select = scanner.nextInt();
             switch (select){
@@ -34,7 +34,7 @@ public class Main {
             System.out.println("Şifre oluşturulamadı, lütfen başka şifre giriniz.");
             newPassword = scanner.next();
         }
-        
+
         System.out.println("Şifre oluşturuldu");
     }
 }
